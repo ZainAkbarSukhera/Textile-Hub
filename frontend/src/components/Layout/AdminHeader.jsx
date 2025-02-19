@@ -14,18 +14,23 @@ const AdminHeader = () => {
       <div>
         <Link to="/">
           <img
-            src=""
-            alt=""
+              src="https://i.ibb.co/8KNKx97/Logo.png"
+              alt="Logo"
+              style={{
+                height: "80px",
+                width: "auto",
+                filter: "sepia(1) hue-rotate(170deg) saturate(400%) brightness(0.4)"
+              }}
           />
         </Link>
       </div>
-      <div className="flex items-center">
-        <div className="flex items-center mr-4">
-          <Link to="/dashboard/cupouns" className="800px:block hidden">
-            <AiOutlineGift
-              color="#555"
-              size={30}
-              className="mx-5 cursor-pointer"
+           <div className="flex items-center">
+             <div className="flex items-center mr-4">
+               <Link to="/dashboard/cupouns" className="800px:block hidden">
+                 <AiOutlineGift
+                     color="#555"
+                     size={30}
+                     className="mx-5 cursor-pointer"
             />
           </Link>
           <Link to="/dashboard-events" className="800px:block hidden">

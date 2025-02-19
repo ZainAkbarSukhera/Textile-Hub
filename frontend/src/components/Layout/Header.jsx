@@ -58,16 +58,21 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src=""
-                alt=""
+                  src="https://i.ibb.co/8KNKx97/Logo.png"
+                  alt="Logo"
+                  style={{
+                    height: "80px",
+                    width: "auto",
+                    filter: "sepia(1) hue-rotate(170deg) saturate(400%) brightness(0.4)"
+                  }}
               />
             </Link>
           </div>
           {/* search box */}
           <div className="w-[50%] relative">
             <input
-              type="text"
-              placeholder="Search Product..."
+                type="text"
+                placeholder="Search Product..."
               value={searchTerm}
               onChange={handleSearchChange}
               className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md"
@@ -110,7 +115,7 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 800px:flex items-center justify-between w-full bg-[#3321c8] h-[70px]`}
+        } transition hidden 800px:flex items-center justify-between w-full bg-[#004E5d] h-[70px]`}
       >
         <div
           className={`${styles.section} relative ${styles.noramlFlex} justify-between`}
@@ -202,7 +207,7 @@ const Header = ({ activeHeading }) => {
       {/* mobile header */}
       <div
         className={`${
-          active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
+          active === true ? "shadow-sm fixed top-0 left-0 z-10 bg-[#fff]" : null
         }
       w-full h-[60px] bg-[#fff] z-50 top-0 left-0 shadow-sm 800px:hidden`}
       >

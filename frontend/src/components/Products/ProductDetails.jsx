@@ -162,7 +162,7 @@ const ProductDetails = ({ data }) => {
                 <div className="flex items-center mt-12 justify-between pr-3">
                   <div>
                     <button
-                      className="bg-gradient-to-r from-teal-400 to-teal-500 text-white font-bold rounded-l px-4 py-2 shadow-lg hover:opacity-75 transition duration-300 ease-in-out"
+                      className="bg-[#004E5d] text-white font-bold rounded-l px-4 py-2 shadow-lg hover:opacity-75 transition duration-300 ease-in-out"
                       onClick={decrementCount}
                     >
                       -
@@ -171,17 +171,17 @@ const ProductDetails = ({ data }) => {
                       {count}
                     </span>
                     <button
-                      className="bg-gradient-to-r from-teal-400 to-teal-500 text-white font-bold rounded-l px-4 py-2 shadow-lg hover:opacity-75 transition duration-300 ease-in-out"
-                      onClick={incrementCount}
+                        className="bg-[#004E5d] text-white font-bold rounded-l px-4 py-2 shadow-lg hover:opacity-75 transition duration-300 ease-in-out transform scale-x-[-1]"
+                        onClick={incrementCount}
                     >
                       +
                     </button>
                   </div>
                   <div>
                     {click ? (
-                      <AiFillHeart
-                        size={30}
-                        className="cursor-pointer"
+                        <AiFillHeart
+                            size={30}
+                            className="cursor-pointer"
                         onClick={() => removeFromWishlistHandler(data)}
                         color={click ? "red" : "#333"}
                         title="Remove from wishlist"

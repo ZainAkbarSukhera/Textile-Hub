@@ -13,8 +13,13 @@ const DashboardHeader = () => {
       <div>
         <Link to="/dashboard">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-            alt=""
+              src="https://i.ibb.co/8KNKx97/Logo.png"
+              alt="Logo"
+              style={{
+                height: "80px",
+                width: "auto",
+                filter: "sepia(1) hue-rotate(170deg) saturate(400%) brightness(0.4)"
+              }}
           />
         </Link>
       </div>
@@ -22,9 +27,9 @@ const DashboardHeader = () => {
         <div className="flex items-center mr-4">
           <Link to="/dashboard/cupouns" className="800px:block hidden">
             <AiOutlineGift
-              color="#555"
-              size={30}
-              className="mx-5 cursor-pointer"
+                color="#555"
+                size={30}
+                className="mx-5 cursor-pointer"
             />
           </Link>
           <Link to="/dashboard-events" className="800px:block hidden">
